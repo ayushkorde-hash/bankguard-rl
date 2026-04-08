@@ -1,0 +1,30 @@
+name: bankguard-rl
+version: "1.0"
+description: "Bank fraud investigation RL environment. Agent learns to flag, approve, or investigate transactions."
+author: "Ayush Korde"
+
+tasks:
+  - id: easy
+    description: "Flag obviously fraudulent transactions (amount > 10000)"
+    difficulty: easy
+  - id: medium
+    description: "Detect fraud based on location mismatch and amount patterns"
+    difficulty: medium
+  - id: hard
+    description: "Detect sophisticated fraud with subtle signals"
+    difficulty: hard
+
+api:
+  reset: POST /reset
+  step: POST /step
+  state: GET /state
+
+reward:
+  min: 0.0
+  max: 1.0
+  type: continuous
+
+environment_variables:
+  - API_BASE_URL
+  - MODEL_NAME
+  - HF_TOKEN
