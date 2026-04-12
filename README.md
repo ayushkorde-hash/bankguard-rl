@@ -15,5 +15,4 @@ Bank Fraud Investigation RL Environment for OpenEnv Round 1.
 ## Team
 - Ayush Korde
 - Neeraj Shinde
-- Kashish Sonawanecd
--  Desktop\bankguard-rl cd Desktop\bankguard-rl
+- Kashish Sonawane
